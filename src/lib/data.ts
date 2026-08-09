@@ -9,9 +9,9 @@ export const profile = {
   bio: "Vocational student at SMK PGRI 1 Tangerang studying Computer and Network Engineering. I spend my time configuring MikroTik routers, setting up Linux servers, and learning how real networks stay up, secure, and fast.",
   email: "your.email@example.com",
   socials: {
-    github: "https://github.com/your-username",
+    github: "https://github.com/alszurr",
     linkedin: "https://www.linkedin.com/in/your-username",
-    instagram: "https://www.instagram.com/your-username",
+    instagram: "https://www.instagram.com/alprtma_sk",
   },
   resumeUrl: "#",
 } as const;
