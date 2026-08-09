@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Alif Pratama Sukarno Putra",
+  name: "Alif Pratama Soekarno Putra",
   firstName: "Alif",
   role: "TJKT Student",
   headline: "TJKT Student · Network & Systems Enthusiast",
@@ -94,7 +94,7 @@ export const navLinks = [
 ] as const;
 
 export const siteMeta = {
-  title: "Alif Pratama Sukarno Putra — TJKT Student",
+  title: "Alif Pratama Soekarno Putra — TJKT Student",
   description:
-    "Portfolio of Alif Pratama Sukarno Putra, a TJKT (Computer & Network Engineering) student at SMK PGRI 1 Tangerang. Skills in MikroTik, Linux, and system administration.",
+    "Portfolio of Alif Pratama Soekarno Putra, a TJKT (Computer & Network Engineering) student at SMK PGRI 1 Tangerang. Skills in MikroTik, Linux, and system administration.",
 } as const;
