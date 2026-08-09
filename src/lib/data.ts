@@ -11,7 +11,7 @@ export const profile = {
   socials: {
     github: "https://github.com/alszurr",
     linkedin: "https://www.linkedin.com/in/your-username",
-    instagram: "https://www.instagram.com/alprtma_sk",
+    instagram: "https://www.instagram.com/alfprtma_sk",
   },
   resumeUrl: "#",
 } as const;
