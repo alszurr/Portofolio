@@ -14,19 +14,19 @@ const contactLinks = [
     label: "GitHub",
     Icon: GithubIcon,
     href: profile.socials.github,
-    handle: "Tama",
+    handle: "alszurr",
   },
   {
     label: "LinkedIn",
     Icon: LinkedinIcon,
     href: profile.socials.linkedin,
-    handle: "your-username",
+    handle: "-",
   },
   {
     label: "Instagram",
     Icon: InstagramIcon,
     href: profile.socials.instagram,
-    handle: "your-username",
+    handle: "@alfprtma_sk",
   },
   {
     label: "Email",
