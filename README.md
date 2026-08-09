@@ -1,6 +1,6 @@
-# Alif Pratama Sukarno Putra — Portfolio
+# Alif Pratama Soekarno Putra — Portfolio
 
-A dark, single-page personal portfolio for Alif Pratama Sukarno Putra, a TJKT
+A dark, single-page personal portfolio for Alif Pratama Soekarno Putra, a TJKT
 (Computer & Network Engineering) student at SMK PGRI 1 Tangerang. Built as a
 school assignment with a production-grade stack so it can double as a real
 professional portfolio.
