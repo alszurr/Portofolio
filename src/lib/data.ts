@@ -4,6 +4,7 @@ export const profile = {
   role: "TJKT Student",
   headline: "TJKT Student · Network & Systems Enthusiast",
   school: "SMK PGRI 1 Tangerang",
+  schoolUrl: "https://www.google.com/maps/search/?api=1&query=SMK+PGRI+1+Tangerang",
   program: "Teknik Jaringan Komputer dan Telekomunikasi (TJKT)",
   location: "Tangerang, Indonesia",
   bio: "Vocational student at SMK PGRI 1 Tangerang studying Computer and Network Engineering. I spend my time configuring MikroTik routers, setting up Linux servers, and learning how real networks stay up, secure, and fast.",
@@ -58,6 +59,7 @@ export const skills = [
 
 export const education = {
   school: "SMK PGRI 1 Tangerang",
+  schoolUrl: "https://www.google.com/maps/search/?api=1&query=SMK+PGRI+1+Tangerang",
   program: "Teknik Jaringan Komputer dan Telekomunikasi (TJKT)",
   years: "2024 — 2027",
   description:

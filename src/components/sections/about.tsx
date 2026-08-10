@@ -1,12 +1,12 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, MapPin, School } from "lucide-react";
+import { ExternalLink, GraduationCap, MapPin, School } from "lucide-react";
 import { AnimatedSection } from "@/components/shared/animated-section";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { profile } from "@/lib/data";
 
 const facts = [
-  { icon: School, label: "School", value: profile.school },
+  { icon: School, label: "School", value: profile.school, href: profile.schoolUrl },
   { icon: GraduationCap, label: "Program", value: profile.program },
   { icon: MapPin, label: "Location", value: profile.location },
 ];
@@ -34,17 +34,41 @@ export function About() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2.5">
-            {facts.map(({ icon: Icon, label, value }) => (
-              <Badge
-                key={label}
-                variant="secondary"
-                className="h-auto gap-2 rounded-full px-3.5 py-1.5 font-normal"
-              >
-                <Icon className="size-3.5 text-emerald-400" aria-hidden="true" />
-                <span className="text-muted-foreground">{label}:</span>
-                {value}
-              </Badge>
-            ))}
+            {facts.map(({ icon: Icon, label, value, href }) => {
+              const badgeContent = (
+                <Badge
+                  variant="secondary"
+                  className={`h-auto gap-2 rounded-full px-3.5 py-1.5 font-normal ${
+                    href
+                      ? "transition-all hover:bg-emerald-500/10 hover:text-emerald-300 hover:border-emerald-500/30 cursor-pointer"
+                      : ""
+                  }`}
+                >
+                  <Icon className="size-3.5 text-emerald-400" aria-hidden="true" />
+                  <span className="text-muted-foreground">{label}:</span>
+                  <span>{value}</span>
+                  {href && (
+                    <ExternalLink className="size-3 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-emerald-400" />
+                  )}
+                </Badge>
+              );
+
+              return href ? (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex"
+                >
+                  {badgeContent}
+                </a>
+              ) : (
+                <div key={label} className="inline-flex">
+                  {badgeContent}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { GraduationCap } from "lucide-react";
+import { ExternalLink, GraduationCap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AnimatedSection } from "@/components/shared/animated-section";
@@ -26,7 +26,15 @@ export function Education() {
               <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                 <h3 className="flex items-center gap-2 text-lg font-semibold">
                   <GraduationCap className="size-5 text-emerald-400" aria-hidden="true" />
-                  {education.school}
+                  <a
+                    href={education.schoolUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-1.5 transition-colors hover:text-emerald-400"
+                  >
+                    <span>{education.school}</span>
+                    <ExternalLink className="size-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-emerald-400" />
+                  </a>
                 </h3>
                 <Badge variant="outline" className="rounded-full font-mono text-xs text-emerald-300">
                   {education.years}
