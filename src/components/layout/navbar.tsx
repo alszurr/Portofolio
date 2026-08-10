@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -35,28 +36,28 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
-        <a
-          href="#hero"
+        <Link
+          href="/"
           className="flex items-center gap-2.5 rounded-full font-semibold tracking-tight"
         >
           <span className="inline-flex size-8 items-center justify-center rounded-full border border-primary/30 bg-primary/10 font-mono text-xs font-medium text-emerald-300">
             {initials(profile.name)}
           </span>
           <span className="hidden sm:inline">{profile.firstName}</span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="rounded-full px-3.5 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <Button
-            render={<a href="#contact" />}
+            render={<Link href="/#contact" />}
             size="sm"
             className="ml-3 h-8 rounded-full px-4 font-medium"
           >
@@ -79,19 +80,19 @@ export function Navbar() {
               </SheetHeader>
               <div className="flex flex-col gap-1 px-4">
                 {navLinks.map((link) => (
-                  <a
+                  <Link
                     key={link.href}
                     href={link.href}
                     onClick={() => setOpen(false)}
                     className="rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div className="mt-auto px-4 pb-6">
                 <Button
-                  render={<a href="#contact" onClick={() => setOpen(false)} />}
+                  render={<Link href="/#contact" onClick={() => setOpen(false)} />}
                   className="w-full rounded-full font-medium"
                 >
                   Get In Touch
