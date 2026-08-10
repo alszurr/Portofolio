@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, MapPin, School } from "lucide-react";
 import { AnimatedSection } from "@/components/shared/animated-section";
@@ -18,7 +18,11 @@ export function About() {
 
       <div className="grid items-start gap-10 md:grid-cols-[auto_1fr]">
         <Avatar className="size-28 rounded-3xl border border-border bg-secondary md:size-36">
-          {/* TODO: replace with a real profile photo — src/profile-photo.jpg */}
+          <AvatarImage
+            src="/Tama.jpg"
+            alt={profile.name}
+            className="rounded-3xl object-cover"
+          />
           <AvatarFallback className="rounded-3xl font-mono text-2xl font-medium text-emerald-300">
             AP
           </AvatarFallback>
