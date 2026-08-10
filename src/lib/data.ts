@@ -58,8 +58,8 @@ export const skills = [
 
 export const education = {
   school: "SMK PGRI 1 Tangerang",
-  program: "Teknik Komputer dan Jaringan (TJKT)",
-  years: "20XX — 20XX", // placeholder: replace with real enrollment / graduation years
+  program: "Teknik Jaringan Komputer dan Telekomunikasi (TJKT)",
+  years: "2024 — 2027",
   description:
     "A three-year vocational program covering computer and network fundamentals: networking basics, computer systems, hardware maintenance, and hands-on lab work with routers and servers.",
 } as const;
