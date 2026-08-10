@@ -19,7 +19,7 @@ export function About() {
       <div className="grid items-start gap-10 md:grid-cols-[auto_1fr]">
         <Avatar className="size-28 rounded-3xl border border-border bg-secondary md:size-36">
           <AvatarImage
-            src="/Users/tama/Documents/website/alif-portfolio/public/Tama.jpg"
+            src="/Tama.jpeg"
             alt={profile.name}
             className="rounded-3xl object-cover"
           />
