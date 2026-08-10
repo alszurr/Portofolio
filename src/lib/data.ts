@@ -4,10 +4,10 @@ export const profile = {
   role: "TJKT Student",
   headline: "TJKT Student · Network & Systems Enthusiast",
   school: "SMK PGRI 1 Tangerang",
-  program: "Teknik Komputer dan Jaringan (TJKT)",
+  program: "Teknik Jaringan Komputer dan Telekomunikasi (TJKT)",
   location: "Tangerang, Indonesia",
   bio: "Vocational student at SMK PGRI 1 Tangerang studying Computer and Network Engineering. I spend my time configuring MikroTik routers, setting up Linux servers, and learning how real networks stay up, secure, and fast.",
-  email: "your.email@example.com",
+  email: "lifftamaa@gmail.com",
   socials: {
     github: "https://github.com/alszurr",
     linkedin: "https://www.linkedin.com/in/your-username",
