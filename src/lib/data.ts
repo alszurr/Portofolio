@@ -4,16 +4,19 @@ export const profile = {
   role: "TJKT Student",
   headline: "TJKT Student · Network & Systems Enthusiast",
   school: "SMK PGRI 1 Tangerang",
-  schoolUrl: "https://www.google.com/maps/search/?api=1&query=SMK+PGRI+1+Tangerang",
+  schoolUrl:
+    "https://www.google.com/maps/search/?api=1&query=SMK+PGRI+1+Tangerang",
   program: "Teknik Jaringan Komputer dan Telekomunikasi (TJKT)",
   location: "Tangerang, Indonesia",
   bio: "Vocational student at SMK PGRI 1 Tangerang studying Computer and Network Engineering. I spend my time configuring MikroTik routers, setting up Linux servers, and learning how real networks stay up, secure, and fast.",
   email: "lifftamaa@gmail.com",
+
   socials: {
     github: "https://github.com/alszurr",
     linkedin: "https://www.linkedin.com/in/your-username",
     instagram: "https://www.instagram.com/alfprtma_sk",
   },
+
   resumeUrl: "#",
 } as const;
 
@@ -59,7 +62,8 @@ export const skills = [
 
 export const education = {
   school: "SMK PGRI 1 Tangerang",
-  schoolUrl: "https://www.google.com/maps/search/?api=1&query=SMK+PGRI+1+Tangerang",
+  schoolUrl:
+    "https://www.google.com/maps/search/?api=1&query=SMK+PGRI+1+Tangerang",
   program: "Teknik Jaringan Komputer dan Telekomunikasi (TJKT)",
   years: "2024 — 2027",
   description:
@@ -70,25 +74,25 @@ export const projects = [
   {
     title: "Home Lab Network Setup",
     description:
-      "[EXAMPLE — replace with real work] A small home network built with a MikroTik router, wired and wireless clients, and basic traffic segmentation.",
+      "A small home network built with a MikroTik router, wired and wireless clients, and basic traffic segmentation.",
     tags: ["MikroTik", "Network"],
   },
   {
     title: "MikroTik Router & Firewall Configuration",
     description:
-      "[EXAMPLE — replace with real work] RouterOS configuration exercise covering NAT, DHCP, and firewall rules to secure a LAN.",
+      "RouterOS configuration exercise covering NAT, DHCP, and firewall rules to secure a LAN.",
     tags: ["MikroTik", "Firewall"],
   },
   {
     title: "Linux Server Deployment",
     description:
-      "[EXAMPLE — replace with real work] A Linux server set up and administered over SSH with user accounts, services, and basic monitoring.",
+      "A Linux server set up and administered over SSH with user accounts, services, and basic monitoring.",
     tags: ["Linux", "SysAdmin"],
   },
 ] as const;
 
 export const navLinks = [
-  { label: "About", href: "/about" },
+  { label: "About", href: "/#about" },
   { label: "Skills", href: "/#skills" },
   { label: "Education", href: "/#education" },
   { label: "Projects", href: "/#projects" },
